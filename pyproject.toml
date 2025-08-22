@@ -1,0 +1,22 @@
+[project]
+name = "learning-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MUDASSIR ABRAR", email = "161126723+MudassarAbrar@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai-agents>=0.2.8",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+learning-agent = "learning_agent:main"
+run = "learning_agent.my_agent:center"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
